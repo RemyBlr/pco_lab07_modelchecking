@@ -18,7 +18,7 @@ int main(int /*argc*/, char */*argv*/[])
         // checker.run();
     }
     {
-        ModelNumbers model;
+        BufferModel model;
         PcoModelChecker checker;
         checker.setModel(&model);
         checker.run();
