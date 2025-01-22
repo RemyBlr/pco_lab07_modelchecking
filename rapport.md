@@ -1,4 +1,4 @@
-# Rapport : Model Checking
+# Model Checking
 > Auteurs : Bleuer Rémy, Moschard Colin
 
 ## 1. Introduction
@@ -61,7 +61,7 @@ Dans le `PcoModel` nommé `BufferModel` :
 ## 3. Résultats et analyse
 
 - 1670 scénarios explorés sur 1680 ($\frac{9!}{3!3!3!} = 1680$, 9 pour la profondeur, et 3 sections par thread).
-- Résultats typiques observés :
+- Résultats observé :
   - 1116 scénarios se terminent correctement (`AllScenario`). 
   - 554 scénarios aboutissent à un `DeadEnd`, signifiant que l’ordonnancement tenté n’est pas réalisable compte tenu du graphe de scénario linéaire de chaque thread. (C'est une fin convenable)
   - Aucun deadlock n’a été détecté, montrant que le code ne s’est jamais retrouvé dans une situation de blocage complet pour tous les fils d’exécution.
