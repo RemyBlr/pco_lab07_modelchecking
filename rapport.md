@@ -6,7 +6,7 @@
 Dans ce labo, nous avons choisi de vérifier un buffer concurrent implémenté à l’aide de sémaphores basé sur un des exercices corrigé que Monsieur Cuisenaire nous a fournis (ex15.1_alexandre.h).
 L’objectif est de tester tous les scénarios (ordres d’exécution possible) entre :
 
-- Un **producteur** (dépose un élément dans le buffer),  
+- Un **producteur** (dépose un élément dans le buffer).
 - Deux **consommateurs** (récupèrent chacun un élément dans le buffer).
 
 Le buffer est conçu pour autoriser jusqu’à 2 consommateurs simultanés, d’où la gestion de plusieurs sémaphores (`mutex`, `waitFull`, `waitEmpty`).
